@@ -40,7 +40,7 @@ function Navbar() {
                 color={color}
                 size="lg"
                 outline="none"
-                icon={<IoMdMoon></IoMdMoon>}
+                icon={colorMode === 'light' ? <IoMdMoon/> : <IoMdSunny />}
                 onClick={toggleColorMode}
                 ></IconButton>
             </Box>
