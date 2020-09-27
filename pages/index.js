@@ -1,4 +1,4 @@
-import { Text, Heading, useColorMode, useColorModeValue, IconButton, Box, Center, Container } from "@chakra-ui/core"
+import { Button, Heading, useColorMode, useColorModeValue, Wrap, IconButton, Box, Center, Container, Flex } from "@chakra-ui/core"
 import Navbar from "../components/Navbar"
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
@@ -19,6 +19,16 @@ function Index() {
                 <Heading fontWeight="black" textAlign="center" fontSize="4xl" mt={10}>
                     Tamil Annual Conference<br />Methodist Youth Fellowship
                 </Heading>
+                <Center pt={12}>
+                    <Flex flexDirection="column">
+                    <Button fontWeight="semi" colorScheme={bg} bg={color} size="lg" rounded={25} mb={8}>
+                        Lesson
+                    </Button>
+                    <Button fontWeight="semi" colorScheme={bg} variant="outline" size="lg" rounded={25}>
+                        Explore
+                    </Button>
+                    </Flex>
+                </Center >
             </Container>
         </Box>
     )

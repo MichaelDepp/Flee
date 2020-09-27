@@ -13,6 +13,7 @@ const customTheme = {
     fontWeights: {
         normal: 400,
         medium: 500,
+        semi: 600,
         bold: 700,
         xbold: 800,
         black: 900
