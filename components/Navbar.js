@@ -3,8 +3,7 @@ import { IoMdClose, IoMdMoon, IoMdSunny, IoMdMenu } from "react-icons/io";
 
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode()
-
-    const bg = useColorModeValue("#F8F8F8", "#0E101C")
+    const bg = useColorModeValue("#0E101C", "#F8F8F8")
     const color = useColorModeValue("#865BCE", "#865BCE")
     return (
         <Flex
@@ -40,7 +39,7 @@ function Navbar() {
                 color={color}
                 size="lg"
                 outline="none"
-                icon={colorMode === 'light' ? <IoMdMoon/> : <IoMdSunny />}
+                icon={colorMode === 'light' ? <IoMdSunny/> : <IoMdMoon />}
                 onClick={toggleColorMode}
                 ></IconButton>
             </Box>

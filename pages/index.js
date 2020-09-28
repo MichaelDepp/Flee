@@ -1,12 +1,11 @@
 import { Button, Heading, useColorMode, useColorModeValue, Wrap, IconButton, Box, Center, Container, Flex } from "@chakra-ui/core"
 import Navbar from "../components/Navbar"
-import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 function Index() {
 
     const { colorMode, toggleColorMode } = useColorMode()
 
-    const bg = useColorModeValue("#F8F8F8", "#0E101C")
+    const bg = useColorModeValue("#0E101C", "#F8F8F8")
     const color = useColorModeValue("#865BCE", "#865BCE")
     return (
         <Box
@@ -15,17 +14,17 @@ function Index() {
             minHeight="100vh"
         >
             <Navbar></Navbar>
-            <Container>
-                <Heading fontWeight="black" textAlign="center" fontSize="4xl" mt={10}>
+            <Container maxW="xl">
+                <Heading fontWeight="black" textAlign="center" fontSize={["4xl", "4xl", "5xl", "6xl"]} mt={10}>
                     Tamil Annual Conference<br />Methodist Youth Fellowship
                 </Heading>
                 <Center pt={12}>
                     <Flex flexDirection="column">
-                    <Button fontWeight="semi" colorScheme={bg} bg={color} size="lg" rounded={25} mb={8}>
-                        Lesson
+                        <Button fontWeight="bold" fontSize="2xl" _hover={{ bg: color }} bg={color} color={bg} size="lg" rounded={25} mb={8} px={16}>
+                            Lesson
                     </Button>
-                    <Button fontWeight="semi" colorScheme={bg} variant="outline" size="lg" rounded={25}>
-                        Explore
+                        <Button fontWeight="bold" fontSize="2xl" colorScheme={color} variant="outline" size="lg" rounded={25} px={16}>
+                            Explore
                     </Button>
                     </Flex>
                 </Center >
