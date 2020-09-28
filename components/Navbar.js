@@ -1,4 +1,4 @@
-import { Button, Box, Flex, Heading, Stack, useColorMode, useColorModeValue, IconButton } from "@chakra-ui/core"
+import { Button, Link, Box, Flex, Heading, Stack, useColorMode, useColorModeValue, IconButton } from "@chakra-ui/core"
 import { IoMdClose, IoMdMoon, IoMdSunny, IoMdMenu } from "react-icons/io";
 
 function Navbar() {
@@ -17,32 +17,34 @@ function Navbar() {
         >
             <Flex align="center">
                 <IconButton
-                colorScheme="none"
-                color={color}
-                size="lg"
-                fontSize="2xl"
-                outline="none"
-                icon={<IoMdMenu></IoMdMenu>}
+                    colorScheme="none"
+                    color={color}
+                    size="lg"
+                    fontSize="xl"
+                    outline="none"
+                    icon={<IoMdMenu></IoMdMenu>}
                 ></IconButton>
             </Flex>
 
             <Box>
-                <Heading>
-                    Flee
+                <Link href="/">
+                    <Heading>
+                        Flee
                 </Heading>
+                </Link>
             </Box>
 
             <Box
                 display={{ sm: true ? "block" : "none", md: "block" }}
             >
                 <IconButton
-                colorScheme="none"
-                color={color}
-                size="lg"
-                outline="none"
-                fontSize="xl"
-                icon={colorMode === 'light' ? <IoMdSunny /> : <IoMdMoon />}
-                onClick={toggleColorMode}
+                    colorScheme="none"
+                    color={color}
+                    size="lg"
+                    outline="none"
+                    fontSize="2xl"
+                    icon={colorMode === 'light' ? <IoMdSunny /> : <IoMdMoon />}
+                    onClick={toggleColorMode}
                 ></IconButton>
             </Box>
         </Flex>
