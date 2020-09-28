@@ -9,7 +9,7 @@ function Lesson() {
             <Heading>
                 Lesson
             </Heading>
-            <HStack overflow="scroll" spacing="24px" mt={8}>
+            <HStack overflow="scroll" spacing="24px" my={8}>
                 <Boximage
                     imageUrl="./assets/conv.jpg"
                     title="Preface"
