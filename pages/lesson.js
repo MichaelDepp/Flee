@@ -6,7 +6,7 @@ function Lesson() {
 
     return (
         <Layout>
-            <Heading fontWeight="bold" fontSize="2xl">
+            <Heading fontWeight="bold" fontSize="2xl" mt={4}>
                 Lesson
             </Heading>
             <HStack overflowX="scroll" spacing="24px" py={8}>
