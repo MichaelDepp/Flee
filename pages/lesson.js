@@ -6,10 +6,10 @@ function Lesson() {
 
     return (
         <Layout>
-            <Heading>
+            <Heading fontWeight="bold" fontSize="2xl">
                 Lesson
             </Heading>
-            <HStack overflow="scroll" spacing="24px" py={8}>
+            <HStack overflowX="scroll" spacing="24px" py={8}>
                 <Boximage
                     imageUrl="./assets/conv.jpg"
                     title="Preface"
