@@ -20,7 +20,7 @@ function Navbar() {
                     colorScheme="none"
                     color={color}
                     size="lg"
-                    fontSize="xl"
+                    fontSize="2xl"
                     outline="none"
                     icon={<IoMdMenu></IoMdMenu>}
                 ></IconButton>
