@@ -1,5 +1,6 @@
-import { Button, Link, Box, Flex, Heading, Stack, useColorMode, useColorModeValue, IconButton } from "@chakra-ui/core"
+import { Button, Box, Flex, Heading, Stack, useColorMode, useColorModeValue, IconButton } from "@chakra-ui/core"
 import { IoMdClose, IoMdMoon, IoMdSunny, IoMdMenu } from "react-icons/io";
+import Link from 'next/link'
 
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -28,9 +29,9 @@ function Navbar() {
 
             <Box>
                 <Link href="/">
-                    <Heading>
+                    <Heading cursor="pointer">
                         Flee
-                </Heading>
+                    </Heading>
                 </Link>
             </Box>
 

@@ -16,12 +16,12 @@ function Lesson() {
                 >
                 </Boximage>
                 <Boximage
-                    imageUrl="./assets/conv.jpg"
+                    imageUrl="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/2/19/w600X390/Ajith.jpg"
                     title="Lesson 1"
                 >
                 </Boximage>
                 <Boximage
-                    imageUrl="./assets/conv.jpg"
+                    imageUrl="https://newsmeter.in/wp-content/uploads/2019/12/Rajinikanth-Kaala-Movie-Teaser-From-Today-Poster.jpg"
                     title="Lesson 2"
                 >
                 </Boximage>

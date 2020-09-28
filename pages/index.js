@@ -1,5 +1,6 @@
-import { Button, Link, Heading, useColorMode, useColorModeValue, Wrap, IconButton, Box, Center, Container, Flex } from "@chakra-ui/core"
+import { Button, Heading, useColorMode, useColorModeValue, Wrap, IconButton, Box, Center, Container, Flex } from "@chakra-ui/core"
 import Layout from "../components/Layout"
+import Link from 'next/link'
 
 function Index() {
     const { colorMode, toggleColorMode } = useColorMode()

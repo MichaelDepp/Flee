@@ -7,7 +7,7 @@ function Boximage(props) {
             <Box>
                 <Image
                     minH={["md", "md", "lg", "xl"]}
-                    minW="xs"
+                    minW={[56, "xs", "xs", "xs"]}
                     borderRadius="25px"
                     objectFit="cover"
                     src={props.imageUrl}
