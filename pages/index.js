@@ -8,19 +8,20 @@ function Index() {
     const bg = useColorModeValue("#00102A", "#F8F8F8")
     const color = useColorModeValue("#F8F8F8", "#00102A")
     const btn = "#304FFF"
+    const sbtn = useColorModeValue("#F8F8F8", "#304FFF")
     return (
         <Layout>
-            <Heading fontWeight="black" textAlign="center" fontSize={["4xl", "4xl", "5xl", "6xl"]} mt={10}>
+            <Heading fontWeight="black" textAlign="center" fontSize={["4xl", "4xl", "5xl", "6xl"]} mt={10} color={sbtn}>
                 Tamil Annual Conference<br />Methodist Youth Fellowship
                 </Heading>
             <Center pt={12}> 
                 <Flex flexDirection="column">
                     <Link href="/lesson">
-                        <Button fontWeight="bold" fontSize="2xl" _hover={{ bg: btn }} bg={btn} color={bg} size="lg" rounded={25} mb={8} px={16}>
+                        <Button fontWeight="bold" fontSize="2xl" _hover={{ bg: btn }} bg={btn} color="#F8F8F8" size="lg" rounded={25} mb={8} px={16}>
                             Lesson
                         </Button>
                     </Link>
-                    <Button fontWeight="bold" fontSize="2xl" colorScheme={btn} variant="outline" size="lg" rounded={25} px={16}>
+                    <Button fontWeight="bold" fontSize="2xl" color={sbtn} colorScheme={sbtn} variant="outline" size="lg" rounded={25} px={16}>
                         Explore
                     </Button>
                 </Flex>
