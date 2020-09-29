@@ -32,8 +32,8 @@ function Article() {
             </Heading>
             <AspectRatio my={4} maxW="560px" ratio={16/9}>
                 <iframe
-                    title="naruto"
-                    src="https://www.youtube.com/embed/QhBnZ6NPOY0"
+                    title="lesson"
+                    src="https://youtu.be/UYtKTftGqHk"
                     allowFullScreen
                 />
             </AspectRatio>
