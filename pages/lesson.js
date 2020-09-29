@@ -1,14 +1,17 @@
-import { Button, Heading, useColorMode, useColorModeValue, Wrap, IconButton, Box, Stack, HStack, VStack, Container, Flex } from "@chakra-ui/core"
+import { Button, Heading, useColorMode, useColorModeValue, Wrap, IconButton, Box, Stack, HStack, VStack, Container, Flex, Center } from "@chakra-ui/core"
 import Layout from "../components/Layout"
 import Boximage from "../components/Boximage"
+import Link from "next/link"
 
 function Lesson() {
 
     return (
         <Layout>
-            <Heading fontWeight="bold" fontSize="2xl" mt={4}>
-                Lesson
+            <Center>
+                <Heading fontWeight="xbold" fontSize="3xl" mt={4}>
+                    Lesson
             </Heading>
+            </Center>
             <HStack overflowX="scroll" spacing="24px" py={8}>
                 <Boximage
                     imageUrl="./assets/art6.jpg"
