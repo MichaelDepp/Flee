@@ -33,7 +33,7 @@ function Article() {
             <AspectRatio my={4} maxW="560px" ratio={16/9}>
                 <iframe
                     title="lesson"
-                    src="https://youtu.be/UYtKTftGqHk"
+                    src="https://www.youtube.com/embed/UYtKTftGqHk"
                     allowFullScreen
                 />
             </AspectRatio>
