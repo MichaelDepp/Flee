@@ -43,7 +43,7 @@ function App({ Component, pageProps }) {
                 <CSSReset />
                 <Head>
                     <title>Flee</title>
-                    <link rel="shortcut icon" href="./assets/favicon.png" />
+                    <link rel="shortcut icon" href="./assets/logo.png" />
                 </Head>
                 <Component {...pageProps} />
             </ColorModeProvider>

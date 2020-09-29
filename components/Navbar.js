@@ -1,4 +1,4 @@
-import { Button, Box, Flex, Heading, Stack, useColorMode, useColorModeValue, IconButton } from "@chakra-ui/core"
+import { Button, Box, Flex, Image, Stack, useColorMode, useColorModeValue, IconButton } from "@chakra-ui/core"
 import { IoMdClose, IoMdMoon, IoMdSunny, IoMdMenu } from "react-icons/io";
 import Link from 'next/link'
 
@@ -29,9 +29,9 @@ function Navbar() {
 
             <Box>
                 <Link href="/">
-                    <Heading cursor="pointer">
-                        Flee
-                    </Heading>
+                    <Box boxSize="60px">
+                        <Image src="./assets/logo.png" alt="Flee Logo" />
+                    </Box>
                 </Link>
             </Box>
 

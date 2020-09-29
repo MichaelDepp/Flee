@@ -11,17 +11,17 @@ function Lesson() {
             </Heading>
             <HStack overflowX="scroll" spacing="24px" py={8}>
                 <Boximage
-                    imageUrl="./assets/conv.jpg"
+                    imageUrl="./assets/art6.jpg"
                     title="Preface"
                 >
                 </Boximage>
                 <Boximage
-                    imageUrl="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/2/19/w600X390/Ajith.jpg"
+                    imageUrl="./assets/art2.jpg"
                     title="Lesson 1"
                 >
                 </Boximage>
                 <Boximage
-                    imageUrl="https://newsmeter.in/wp-content/uploads/2019/12/Rajinikanth-Kaala-Movie-Teaser-From-Today-Poster.jpg"
+                    imageUrl="./assets/art5.jpg"
                     title="Lesson 2"
                 >
                 </Boximage>
@@ -31,8 +31,28 @@ function Lesson() {
                 >
                 </Boximage>
                 <Boximage
-                    imageUrl="./assets/conv.jpg"
+                    imageUrl="./assets/art4.jpg"
                     title="Lesson 4"
+                >
+                </Boximage>
+                <Boximage
+                    imageUrl="./assets/new5.jpg"
+                    title="Lesson 5"
+                >
+                </Boximage>
+                <Boximage
+                    imageUrl="./assets/new1.jpg"
+                    title="Lesson 6"
+                >
+                </Boximage>
+                <Boximage
+                    imageUrl="./assets/new6.jpg"
+                    title="Lesson 7"
+                >
+                </Boximage>
+                <Boximage
+                    imageUrl="./assets/art3.jpg"
+                    title="Finale"
                 >
                 </Boximage>
             </HStack>
