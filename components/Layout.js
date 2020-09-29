@@ -4,8 +4,9 @@ import Navbar from "../components/Navbar"
 function Layout(props) {
     const { colorMode, toggleColorMode } = useColorMode()
 
-    const bg = useColorModeValue("#0E101C", "#F8F8F8")
-    const color = useColorModeValue("#865BCE", "#865BCE")
+    const bg = useColorModeValue("#00102A", "#F8F8F8")
+    const color = useColorModeValue("#F8F8F8", "#00102A")
+    const btn = "#304FFF"
     return (
         <Box
             bg={bg}
