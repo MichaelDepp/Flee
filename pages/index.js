@@ -1,4 +1,4 @@
-import { Button, Heading, useColorMode, useColorModeValue, Wrap, IconButton, Box, Center, Container, Flex } from "@chakra-ui/core"
+import { Button, Heading, useColorMode, useColorModeValue, VStack, Text, Box, Center, Container, Flex } from "@chakra-ui/core"
 import Layout from "../components/Layout"
 import Link from 'next/link'
 
@@ -11,21 +11,20 @@ function Index() {
     const sbtn = useColorModeValue("#F8F8F8", "#304FFF")
     return (
         <Layout>
-            <Heading fontWeight="black" textAlign="center" fontSize={["4xl", "4xl", "5xl", "6xl"]} mt={10} color={sbtn}>
-                Tamil Annual Conference<br />Methodist Youth Fellowship
+            <Box>
+                <Heading fontWeight="black" textAlign="center" fontSize={["4xl", "4xl", "5xl", "6xl"]} mt={10} color={sbtn}>
+                    Tamil Annual Conference<br />Methodist Youth Fellowship
                 </Heading>
-            <Center pt={12}> 
-                <Flex flexDirection="column">
-                    <Link href="/lesson">
-                        <Button fontWeight="bold" fontSize="2xl" _hover={{ bg: btn }} bg={btn} color="#F8F8F8" size="lg" rounded={25} mb={8} px={16}>
-                            Lesson
-                        </Button>
-                    </Link>
-                    <Button fontWeight="bold" fontSize="2xl" color={sbtn} colorScheme={sbtn} variant="outline" size="lg" rounded={25} px={16}>
-                        Explore
-                    </Button>
-                </Flex>
-            </Center >
+                <Box pt={12}>
+                    <VStack>
+                        <Link href="/lesson">
+                            <Box fontWeight="bold" fontSize="2xl" _hover={{ bg: btn }} bg={btn} color="#F8F8F8" size="lg" rounded={25} py={1} px={16}>
+                                <Text>Lesson</Text>
+                            </Box>
+                        </Link>
+                    </VStack>
+                </Box >
+            </Box>
         </Layout>
     )
 }
