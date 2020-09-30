@@ -44,7 +44,7 @@ function Navbar() {
                 <Box>
                     <Link href="/">
                         <Box boxSize="60px">
-                            <Image src={colorMode === 'light' ? "./assets/logow.png" : "./assets/logo.png"} alt="Flee Logo" />
+                            <Image src={colorMode === 'light' ? "./assets/logow.png" : "./assets/logo.png"} alt="Flee Logo" cursor="pointer" />
                         </Box>
                     </Link>
                 </Box>
@@ -56,7 +56,7 @@ function Navbar() {
                         colorScheme="none"
                         color={btn}
                         size="lg"
-                        outline="none"
+                        _focus={{ outline: "none" }}
                         fontSize="2xl"
                         icon={colorMode === 'light' ? <IoMdSunny /> : <IoMdMoon />}
                         onClick={toggleColorMode}

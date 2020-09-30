@@ -14,9 +14,11 @@ function Layout(props) {
             minHeight="100vh"
         >
             <Navbar></Navbar>
-            <Container maxW="xl">
+            <Center>
+            <Box w={["90%", "90%", "70%", "80%"]}>
                 {props.children}
-            </Container>
+            </Box>
+            </Center>
         </Box>
     )
 }

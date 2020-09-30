@@ -1,4 +1,5 @@
 import {Center, Text, Box, VStack, useColorMode, useColorModeValue} from "@chakra-ui/core"
+import Linkpage from "../components/Linkpage"
 import Link from "next/link"
 
 function Navscreen() {
@@ -11,31 +12,11 @@ function Navscreen() {
         <Center minH="100vh" position="fixed" w="100vw" bg={navclr}>
             <Box justify="center" mb="200px">
                 <VStack>
-                    <Link href="/">
-                    <Text fontWeight="black" color={sbtn} fontSize={["5xl", "5xl", "6xl", "6xl"]}>
-                        Home
-                    </Text>
-                    </Link>
-                    <Link href="/lesson">
-                    <Text fontWeight="black" color={sbtn} fontSize={["5xl", "5xl", "6xl", "6xl"]}>
-                        Lesson
-                    </Text>
-                    </Link>
-                    <Link href="/counselling">
-                    <Text fontWeight="black" color={sbtn} fontSize={["5xl", "5xl", "6xl", "6xl"]}>
-                        Counselling
-                    </Text>
-                    </Link>
-                    <Link href="/forum">
-                    <Text fontWeight="black" color={sbtn} fontSize={["5xl", "5xl", "6xl", "6xl"]}>
-                        Forum
-                    </Text>
-                    </Link>
-                    <Link href="/ministry">
-                    <Text fontWeight="black" color={sbtn} fontSize={["5xl", "5xl", "6xl", "6xl"]}>
-                        Ministry
-                    </Text>
-                    </Link>
+                    <Linkpage page={"/"} name={"Home"} color={sbtn}></Linkpage>
+                    <Linkpage page={"/lesson"} name={"Lesson"} color={sbtn}></Linkpage>
+                    <Linkpage page={"/counselling"} name={"Counselling"} color={sbtn}></Linkpage>
+                    <Linkpage page={"/forum"} name={"Forum"} color={sbtn}></Linkpage>
+                    <Linkpage page={"/ministry"} name={"Ministry"} color={sbtn}></Linkpage>
                 </VStack>
             </Box>
         </Center>

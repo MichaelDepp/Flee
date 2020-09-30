@@ -8,7 +8,7 @@ function Lesson() {
     return (
         <Layout>
             <Center>
-                <Heading fontWeight="xbold" fontSize="3xl" mt={4}>
+                <Heading fontWeight="xbold" fontSize="4xl" mt={4}>
                     Lesson
             </Heading>
             </Center>

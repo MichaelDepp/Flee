@@ -6,7 +6,7 @@ function Boximage(props) {
     return (
         <Center>
             <Link href="/article">
-                <Box>
+                <Box cursor="pointer">
                     <Image
                         minH={["md", "md", "lg", "xl"]}
                         minW={[56, "xs", "xs", "xs"]}
