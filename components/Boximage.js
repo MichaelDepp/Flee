@@ -16,7 +16,7 @@ function Boximage(props) {
                     >
                     </Image>
                     <Center mt={2}>
-                        <Text fontWeight="bold" fontSize="2xl">
+                        <Text fontWeight="bold" fontSize="2xl" color={props.colorval}>
                             {props.title}
                         </Text>
                     </Center>

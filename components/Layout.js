@@ -15,9 +15,9 @@ function Layout(props) {
         >
             <Navbar></Navbar>
             <Center>
-            <Box w={["90%", "90%", "70%", "80%"]}>
-                {props.children}
-            </Box>
+                <Box w={["90%", "90%", "70%", "80%"]}>
+                    {props.children}
+                </Box>
             </Center>
         </Box>
     )
