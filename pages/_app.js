@@ -15,7 +15,7 @@ const customTheme = {
         heading: '"Poppins", sans-serif',
         body: "system-ui, sans-serif",
         mono: "Menlo, monospace",
-        tamil: "bamini, amudham",
+        tamil: Trinco,
     },
     fontWeights: {
         normal: 400,
