@@ -2,7 +2,7 @@ import { layout } from "@chakra-ui/core"
 import Undercons from "../components/Undercons"
 import Layout from "../components/Layout"
 
-function Ministry() {
+function Contact() {
     return (
         <Layout>
             <Undercons></Undercons>
@@ -10,4 +10,4 @@ function Ministry() {
     )
 }
 
-export default Ministry
+export default Contact

@@ -1,16 +1,40 @@
 import { Button, Heading, useColorMode, useColorModeValue, Wrap, IconButton, Box, Stack, HStack, VStack, Container, Flex, Center } from "@chakra-ui/core"
 import Layout from "../components/Layout"
 import Boximage from "../components/Boximage"
-import Link from "next/link"
+// import firebase from "../firebase/firebase"
+import { useState, useEffect } from "react"
+// import Spinner from "../components/Spinner"
 
-function Lesson() {
+function Lesson(props) {
 
     const { colorMode, toggleColorMode } = useColorMode()
+    const [lessons, setLessons] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    // const ref = firebase.firestore().collection("lessons")
 
     const bg = useColorModeValue("#00102A", "#F8F8F8")
     const color = useColorModeValue("#F8F8F8", "#00102A")
     const btn = "#304FFF"
     const sbtn = useColorModeValue("#F8F8F8", "#304FFF")
+
+    // function getLesson() {
+    //     setLoading(true)
+    //     ref.get().then((item) => {
+    //         const items = item.docs.map((doc) => doc.data())
+    //         setLessons(items)
+    //         setLoading(false)
+    //     })
+    // }
+
+    // useEffect(() => {
+    //     getLesson()
+    // }, [])
+
+    // if (loading) {
+    //     return <Spinner></Spinner>
+    // }
+
     return (
         <Layout>
             <Center>
@@ -19,60 +43,16 @@ function Lesson() {
             </Heading>
             </Center>
             <HStack overflowX="scroll" spacing="24px" py={8}>
-                <Boximage
-                    imageUrl="./assets/art6.jpg"
-                    title="Preface"
-                    colorval={sbtn}
-                >
-                </Boximage>
-                <Boximage
-                    imageUrl="./assets/art2.jpg"
-                    title="Lesson 1"
-                    colorval={sbtn}
-                >
-                </Boximage>
-                <Boximage
-                    imageUrl="./assets/art5.jpg"
-                    title="Lesson 2"
-                    colorval={sbtn}
-                >
-                </Boximage>
-                <Boximage
-                    imageUrl="./assets/conv.jpg"
-                    title="Lesson 3"
-                    colorval={sbtn}
-                >
-                </Boximage>
-                <Boximage
-                    imageUrl="./assets/art4.jpg"
-                    title="Lesson 4"
-                    colorval={sbtn}
-                >
-                </Boximage>
-                <Boximage
-                    imageUrl="./assets/new5.jpg"
-                    title="Lesson 5"
-                    colorval={sbtn}
-                >
-                </Boximage>
-                <Boximage
-                    imageUrl="./assets/new1.jpg"
-                    title="Lesson 6"
-                    colorval={sbtn}
-                >
-                </Boximage>
-                <Boximage
-                    imageUrl="./assets/new6.jpg"
-                    title="Lesson 7"
-                    colorval={sbtn}
-                >
-                </Boximage>
-                <Boximage
-                    imageUrl="./assets/art3.jpg"
-                    title="Finale"
-                    colorval={sbtn}
-                >
-                </Boximage>
+                {props.lessons.map((lesson, id) => (
+                    <Boximage
+                        key={id}
+                        link={lesson.slug}
+                        imageUrl={lesson.coverimg}
+                        title={lesson.lessontitle}
+                        colorval={sbtn}
+                    >
+                    </Boximage>
+                ))}
             </HStack>
         </Layout>
     )

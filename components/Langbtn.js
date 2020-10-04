@@ -2,6 +2,10 @@ import { Box, Center, Text } from "@chakra-ui/core"
 import Link from "next/link"
 
 function Langbtn(props) {
+
+    const eng = <Text fontFamily="heading">A</Text>
+    const tam = <Text fontFamily="bamini">m</Text>
+
     return (
         <Box cursor="pointer"
             fontWeight="bold"
@@ -16,7 +20,7 @@ function Langbtn(props) {
             justifyContent="center"
             alignItems="center"
         >
-            <Text>A</Text>
+            {props.lang ? eng : tam}
         </Box>
     )
 }

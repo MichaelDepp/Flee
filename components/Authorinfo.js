@@ -1,6 +1,6 @@
 const { Stack, HStack, VStack, Center, Image, Text } = require("@chakra-ui/core");
 
-function Authorinfo() {
+function Authorinfo(props) {
     return (
         <HStack
             spacing={2}
@@ -14,8 +14,9 @@ function Authorinfo() {
             <Text
                 fontSize="sm"
                 fontWeight="medium"
+                fontFamily={props.lang ? "heading" : "amudham"}
             >
-                Rev Timothy Raj
+                {props.name}
             </Text>
             <Text
                 fontSize="sm"

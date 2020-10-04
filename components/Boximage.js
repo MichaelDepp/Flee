@@ -5,7 +5,7 @@ import Link from "next/link"
 function Boximage(props) {
     return (
         <Center>
-            <Link href="/article">
+            <Link href={{ pathname: '/article', query: { lesson: props.link } }}>
                 <Box cursor="pointer">
                     <Image
                         minH={["md", "md", "lg", "xl"]}
