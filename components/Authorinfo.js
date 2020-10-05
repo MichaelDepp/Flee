@@ -14,7 +14,7 @@ function Authorinfo(props) {
             <Text
                 fontSize="sm"
                 fontWeight="medium"
-                fontFamily={props.lang ? "heading" : "amudham"}
+                fontFamily="heading"
             >
                 {props.name}
             </Text>

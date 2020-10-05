@@ -20,7 +20,7 @@ function Articleempty(props) {
     return (
         <Box>
             <Container maxW="xl" >
-                <Heading my={4} fontFamily={lang ? "heading" : "tamil"}>
+                <Heading my={4} fontFamily="heading">
                     {lang ? props.article.maintitle[0] : props.article.maintitle[1]}
                 </Heading>
                 <Authorinfo name={lang ? props.article.author.name[0] : props.article.author.name[1]} lang={lang}></Authorinfo>
@@ -33,7 +33,7 @@ function Articleempty(props) {
                     src={props.article.coverimg}
                 >
                 </Image>
-                <Text my={6} textAlign="justify" fontWeight="medium" fontSize="lg" fontFamily={lang ? "heading" : "tamil"}>
+                <Text my={6} textAlign="justify" fontWeight="medium" fontSize="lg" fontFamily="heading">
                     {lang ? props.article.lessontext[0] : props.article.lessontext[1]}
             </Text>
                 <Heading>
@@ -49,7 +49,7 @@ function Articleempty(props) {
                 <Heading mb={4}>
                     Summary
             </Heading>
-                <Text pb={8} textAlign="justify" fontWeight="medium" fontSize="lg" fontFamily={lang ? "heading" : "tamil"}>
+                <Text pb={8} textAlign="justify" fontWeight="medium" fontSize="lg" fontFamily="heading">
                     {lang ? props.article.summarytext[0] : props.article.summarytext[1]}
             </Text>
             </Container>

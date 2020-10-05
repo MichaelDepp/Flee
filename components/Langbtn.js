@@ -4,7 +4,7 @@ import Link from "next/link"
 function Langbtn(props) {
 
     const eng = <Text fontFamily="heading">A</Text>
-    const tam = <Text fontFamily="bamini">m</Text>
+    const tam = <Text fontFamily="heading">அ</Text>
 
     return (
         <Box cursor="pointer"
