@@ -3,8 +3,8 @@ import Link from "next/link"
 
 function Langbtn(props) {
 
-    const eng = <Text fontFamily="heading">A</Text>
-    const tam = <Text fontFamily="heading">அ</Text>
+    const eng = <Text fontFamily="heading">அ</Text>
+    const tam = <Text fontFamily="heading">A</Text>
 
     return (
         <Box cursor="pointer"

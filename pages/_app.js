@@ -12,7 +12,7 @@ const Trinco = "../font/Trinco.ttf"
 const customTheme = {
     ...theme,
     fonts: {
-        heading: '"Poppins", sans-serif',
+        heading: 'Poppins, sans-serif',
         body: "system-ui, sans-serif",
         mono: "Menlo, monospace",
         tamil: Trinco,
