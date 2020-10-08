@@ -29,7 +29,7 @@ function Index() {
                     </Box>
                     <Box ml={{ base: 0, sm: 0, md: 0, lg: 8 }} w={["100%", "100%", "100%", "50%"]} mt={{ base: 10, sm: 10, md: 0, lg: 8 }} pb={8}>
                         <Image
-                            src={"./assets/home.png"}
+                            src={"./assets/home.svg"}
                         >
                         </Image>
                     </Box>

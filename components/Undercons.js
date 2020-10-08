@@ -4,7 +4,7 @@ function Undercons() {
     return (
         <Box>
             <Center mt={16}>
-                <Image src="./assets/underconst.png" alt="Page No Contetn" width={[
+                <Image src="./assets/underconst.svg" alt="Page No Contetn" width={[
       "100%", // base
       "50%", // 480px upwards
       "50%", // 768px upwards
