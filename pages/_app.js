@@ -11,6 +11,12 @@ const Trinco = "../font/Trinco.ttf"
 
 const customTheme = {
     ...theme,
+    colors: {
+        btncom: {
+            100: "#304FFF",
+            200: "#302FFF"
+        },
+    },
     fonts: {
         heading: 'Poppins, sans-serif',
         body: "system-ui, sans-serif",
