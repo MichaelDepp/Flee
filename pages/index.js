@@ -19,7 +19,7 @@ function Index() {
                         </Heading>
                         <Flex pt={12} justify={["center", "center", "center", "left", ]}>
                             <Link href="/lesson">
-                                <Box fontFamily="Poppins" cursor="pointer" fontWeight="bold" fontSize="2xl" w={["60%", "40%", "30%", "25%"]} _hover={{ bg: btn }} bg={btn} color="#F8F8F8" size="lg" rounded={25} pt={1} pb={2}>
+                                <Box fontFamily="Poppins" cursor="pointer" fontWeight="bold" fontSize="2xl" w={["60%", "40%", "30%", "25%"]} _hover={{ bg: btn }} bg={btn} color="#F8F8F8" size="lg" rounded={25} pt={1} pb={1}>
                                     <Center>
                                         <Text>Lesson</Text>
                                     </Center>

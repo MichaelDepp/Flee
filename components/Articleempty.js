@@ -14,9 +14,7 @@ import Authorinfo from "../components/Authorinfo";
 import Langbtn from "../components/Langbtn";
 import { useState, useEffect } from "react";
 import showdown from "showdown";
-import ReactMarkdown from "react-markdown/with-html";
-import Markdown from "markdown-to-jsx";
-import { GrFacebookOption, GrInstagram } from "react-icons/gr";
+import Footer from "../components/Footer";
 
 function Articleempty(props) {
   const [lang, setLang] = useState(true);
@@ -124,26 +122,7 @@ function Articleempty(props) {
       >
         <Langbtn colorval={btn} lang={lang}></Langbtn>
       </Box>
-      <Center pb={[10, 2, 1, 0]}>
-        <Text
-          color={color}
-          fontSize="md"
-          fontWeight="medium"
-          fontFamily="heading"
-        >
-          Developed by TMC
-        </Text>
-        <Link href="https://www.instagram.com/myf.tac/" isExternal>
-          <Box paddingLeft={1}>
-            <GrInstagram size={"1rem"} color={color} />
-          </Box>
-        </Link>
-        <Link href="https://www.facebook.com/myf.tac/" isExternal>
-          <Box paddingLeft={1}>
-            <GrFacebookOption size={"1rem"} color={color} />
-          </Box>
-        </Link>
-      </Center>
+      <Footer></Footer>
     </Box>
   );
 }

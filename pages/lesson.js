@@ -17,7 +17,7 @@ import Layout from "../components/Layout";
 import Boximage from "../components/Boximage";
 // import firebase from "../firebase/firebase"
 import { useState, useEffect } from "react";
-// import Spinner from "../components/Spinner"
+import Footer from "../components/Footer";
 
 function Lesson(props) {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -51,7 +51,12 @@ function Lesson(props) {
   return (
     <Layout>
       <Center>
-        <Heading fontWeight="xbold" fontSize={["4xl", "4xl", "5xl", "5xl"]} mt={8} color={sbtn}>
+        <Heading
+          fontWeight="xbold"
+          fontSize={["4xl", "4xl", "5xl", "5xl"]}
+          mt={8}
+          color={sbtn}
+        >
           Lesson
         </Heading>
       </Center>
