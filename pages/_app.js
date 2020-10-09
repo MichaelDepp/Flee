@@ -5,9 +5,7 @@ import { theme } from "@chakra-ui/theme"
 import firebase from "../firebase/firebase"
 import { useState, useEffect } from "react"
 import Spinner from "../components/Spinner"
-
-const bamini = "../font/Bamini.ttf"
-const Trinco = "../font/Trinco.ttf"
+import "../styles/style.css"
 
 const customTheme = {
     ...theme,
@@ -21,7 +19,6 @@ const customTheme = {
         heading: 'Poppins, sans-serif',
         body: "system-ui, sans-serif",
         mono: "Menlo, monospace",
-        tamil: Trinco,
     },
     fontWeights: {
         normal: 400,

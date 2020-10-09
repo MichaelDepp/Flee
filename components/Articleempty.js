@@ -8,7 +8,7 @@ const {
   Center,
   Heading,
   Container,
-  Link
+  Link,
 } = require("@chakra-ui/core");
 import Authorinfo from "../components/Authorinfo";
 import Langbtn from "../components/Langbtn";
@@ -59,13 +59,14 @@ function Articleempty(props) {
           }
           lang={lang}
         ></Authorinfo>
-        <AspectRatio mt={8} ratio={[4 / 3, 16 / 9]}>
-          <Image
-            borderRadius="10px"
-            objectFit="cover"
-            src={props.article.coverimg}
-          ></Image>
-        </AspectRatio>
+        <Image
+          mt={4}
+          h={["xs", "sm", "md", "xl"]}
+          w="100%"
+          borderRadius="10px"
+          objectFit="cover"
+          src={props.article.coverimg}
+        ></Image>
         <Box
           my={[6, 8, 10, 12]}
           dangerouslySetInnerHTML={
