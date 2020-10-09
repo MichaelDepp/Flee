@@ -8,6 +8,7 @@ const {
   Center,
   Heading,
   Container,
+  Link
 } = require("@chakra-ui/core");
 import Authorinfo from "../components/Authorinfo";
 import Langbtn from "../components/Langbtn";
@@ -15,6 +16,7 @@ import { useState, useEffect } from "react";
 import showdown from "showdown";
 import ReactMarkdown from "react-markdown/with-html";
 import Markdown from "markdown-to-jsx";
+import { GrFacebookOption, GrInstagram } from "react-icons/gr";
 
 function Articleempty(props) {
   const [lang, setLang] = useState(true);
@@ -46,7 +48,7 @@ function Articleempty(props) {
   }
 
   return (
-    <Box>
+    <Box my={[5, 8, 12, 16]}>
       <Container maxW="xl">
         <Heading my={4} fontFamily="heading">
           {lang ? props.article.maintitle[0] : props.article.maintitle[1]}
@@ -57,43 +59,48 @@ function Articleempty(props) {
           }
           lang={lang}
         ></Authorinfo>
-        <Image
-          mt={4}
-          h={["xs", "sm", "md", "xl"]}
-          w="100%"
-          borderRadius="10px"
-          objectFit="cover"
-          src={props.article.coverimg}
-        ></Image>
-        {/* <Text
-          my={6}
-          textAlign="justify"
-          fontWeight="medium"
-          fontSize="lg"
-          fontFamily="heading"
-          style={lang ? { wordBreak: "keep-all" } : { wordBreak: "break-all" }}
-        >
-          {lang ? props.lesson : props.article.lessontext[1]}
-        </Text> */}
-
-        <div
+        <AspectRatio mt={8} ratio={[4 / 3, 16 / 9]}>
+          <Image
+            borderRadius="10px"
+            objectFit="cover"
+            src={props.article.coverimg}
+          ></Image>
+        </AspectRatio>
+        <Box
+          my={[6, 8, 10, 12]}
           dangerouslySetInnerHTML={
             lang
               ? createMarkup(conv(props.article.lessontext[0]))
               : createMarkup(conv(props.article.lessontext[1]))
           }
-          style={{textAlign: "justify", fontFamily: "Poppins", fontWeight: "500", fontSize: "18px", wordBreak: "break-all"}}
-        ></div>
+          style={
+            lang
+              ? {
+                  textAlign: "justify",
+                  fontFamily: "Poppins",
+                  fontWeight: "500",
+                  fontSize: "18px",
+                  wordBreak: "break-word",
+                }
+              : {
+                  textAlign: "justify",
+                  fontFamily: "Poppins",
+                  fontWeight: "500",
+                  fontSize: "18px",
+                  wordBreak: "break-all",
+                }
+          }
+        ></Box>
 
-        <Heading>Testimony Video</Heading>
-        <AspectRatio my={4} ratio={16 / 9}>
+        <Heading>{lang ? "Testimony Video" : "சாட்சி காணொளி"}</Heading>
+        <AspectRatio my={8} ratio={16 / 9}>
           <iframe
             title="lesson"
             src={"https://www.youtube.com/embed/" + props.article.testimonylink}
             allowFullScreen
           />
         </AspectRatio>
-        <Heading mb={4}>Summary</Heading>
+        <Heading mb={4}>{lang ? "Summary" : "முடிவுரை"}</Heading>
         <Text
           pb={8}
           textAlign="justify"
@@ -116,6 +123,26 @@ function Articleempty(props) {
       >
         <Langbtn colorval={btn} lang={lang}></Langbtn>
       </Box>
+      <Center pb={[10, 2, 1, 0]}>
+        <Text
+          color={color}
+          fontSize="md"
+          fontWeight="medium"
+          fontFamily="heading"
+        >
+          Developed by TMC
+        </Text>
+        <Link href="https://www.instagram.com/myf.tac/" isExternal>
+          <Box paddingLeft={1}>
+            <GrInstagram size={"1rem"} color={color} />
+          </Box>
+        </Link>
+        <Link href="https://www.facebook.com/myf.tac/" isExternal>
+          <Box paddingLeft={1}>
+            <GrFacebookOption size={"1rem"} color={color} />
+          </Box>
+        </Link>
+      </Center>
     </Box>
   );
 }
