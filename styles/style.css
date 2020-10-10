@@ -23,3 +23,15 @@
     background: #4f65dd;
   }
 }
+
+.loader {
+  height: 90vh;
+  position: relative;
+}
+
+.loader .cube {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
