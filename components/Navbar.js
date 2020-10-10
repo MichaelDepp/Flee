@@ -19,7 +19,7 @@ function Navbar() {
     }
 
     return (
-        <div>
+        <div style={{paddingTop: "5px"}}>
             <Flex
                 as="nav"
                 align="center"

@@ -57,7 +57,7 @@ function App({ Component, pageProps }) {
             <ColorModeProvider>
                 <Head>
                     <title>Flee</title>
-                    <link rel="shortcut icon" href="./assets/logo.png" />
+                    <link rel="shortcut icon" href="./ico/icon-192x192.png" />
                     <link rel="manifest" href="./manifest.json" />
                 </Head>
                 <Component {...pageProps} lessons={lessons} />
