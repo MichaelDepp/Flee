@@ -1,15 +1,32 @@
 {
-  "short_name": "Flee",
-  "name": "Flee, Vilagiyodu",
-  "icons": [
-    {
-      "src": "./assets/logo.[ng",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "theme_color": "#304fff",
+    "background_color": "#f8f8f8",
+    "display": "fullscreen",
+    "scope": "/app",
+    "start_url": "/https://flee.vercel.app/",
+    "app_name": "Flee TMC",
+    "short_name": "Flee",
+    "description": "Tamil Annual Methodist Youth Conference",
+    "icons": [
+        {
+            "src": "/ico/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/ico/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/ico/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/ico/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }

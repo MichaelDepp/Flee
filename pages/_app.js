@@ -58,7 +58,7 @@ function App({ Component, pageProps }) {
                 <Head>
                     <title>Flee</title>
                     <link rel="shortcut icon" href="./assets/logo.png" />
-                    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+                    <link rel="manifest" href="./manifest.json" />
                 </Head>
                 <Component {...pageProps} lessons={lessons} />
             </ColorModeProvider>
