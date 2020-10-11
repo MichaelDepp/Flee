@@ -44,7 +44,7 @@ function Navbar() {
                 <Box>
                     <Link href="/">
                         <Box boxSize="60px">
-                            <Image src={colorMode === 'light' ? "./assets/logow.png" : "./assets/logo.png"} alt="Flee Logo" cursor="pointer" />
+                            <Image src={colorMode === 'light' ? "./assets/logo-white.png" : "./assets/logo.png"} alt="Flee Logo" cursor="pointer" />
                         </Box>
                     </Link>
                 </Box>
