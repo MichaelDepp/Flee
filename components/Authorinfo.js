@@ -8,7 +8,7 @@ function Authorinfo(props) {
             <Image
                 borderRadius="full"
                 boxSize="30px"
-                src="./assets/art3.jpg"
+                src={props.img}
                 alt="header"
             />
             <Text

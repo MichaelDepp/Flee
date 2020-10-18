@@ -57,7 +57,7 @@ function Lesson(props) {
           mt={8}
           color={sbtn}
         >
-          Lesson
+          Bible Study
         </Heading>
       </Center>
       <HStack overflowX="scroll" spacing="24px" py={8}>

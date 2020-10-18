@@ -22,7 +22,7 @@ function Footer() {
         fontWeight="medium"
         fontFamily="heading"
       >
-        Developed by TMC
+        Developed by TAC, MYF
       </Text>
       <Link href="https://www.instagram.com/myf.tac/" isExternal>
         <Box paddingLeft={1}>

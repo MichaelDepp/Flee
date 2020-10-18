@@ -9,6 +9,7 @@ const {
   Heading,
   Container,
   Link,
+  layout,
 } = require("@chakra-ui/core");
 import Authorinfo from "../components/Authorinfo";
 import Langbtn from "../components/Langbtn";
@@ -19,6 +20,7 @@ import Footer from "../components/Footer";
 function Articleempty(props) {
   const [lang, setLang] = useState(true);
   const [text, setText] = useState("");
+  const [ans, setAns] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("#00102A", "#F8F8F8");
   const color = useColorModeValue("#F8F8F8", "#00102A");
@@ -45,6 +47,10 @@ function Articleempty(props) {
     };
   }
 
+  const showAns = () => {
+    setAns(!ans)
+  }
+
   return (
     <Box my={[5, 8, 12, 16]}>
       <Container maxW="xl">
@@ -56,6 +62,7 @@ function Articleempty(props) {
             lang ? props.article.author.name[0] : props.article.author.name[1]
           }
           lang={lang}
+          img={props.article.author.image}
         ></Authorinfo>
         <Image
           mt={4}
@@ -99,7 +106,7 @@ function Articleempty(props) {
             allowFullScreen
           />
         </AspectRatio>
-        <Heading mb={4}>{lang ? "Summary" : "முடிவுரை"}</Heading>
+        <Heading mb={4}>{lang ? "Questions" : "கேள்விகள்"}</Heading>
         <Text
           pb={8}
           textAlign="justify"
@@ -110,8 +117,67 @@ function Articleempty(props) {
         >
           {lang ? props.article.summarytext[0] : props.article.summarytext[1]}
         </Text>
+        <Center>
+          <Box
+            fontFamily="Poppins"
+            cursor="pointer"
+            fontWeight="semi"
+            fontSize="lg"
+            w={["55%", "35%", "25%", "20%"]}
+            _hover={{ bg: btn }}
+            bg={btn}
+            color="#F8F8F8"
+            size="lg"
+            rounded={25}
+            pt={1}
+            pb={1}
+            onClick={showAns}
+          >
+            <Center>
+              {ans ? <Text>{lang ? "Close Answer" : "விடை மறை"}</Text> : <Text>{lang ? "Show Answer" : "விடை திற"}</Text>}
+            </Center>
+          </Box>
+        </Center>
+        {!!ans && (
+          <Box mt={6} mb={10}>
+            <Heading mb={4}>{lang ? "Answers" : "விடைகள்"}</Heading>
+            <Text
+              pb={8}
+              textAlign="justify"
+              fontWeight="medium"
+              fontSize="lg"
+              fontFamily="heading"
+              style={
+                lang ? { wordBreak: "keep-all" } : { wordBreak: "break-all" }
+              }
+            >
+              {lang
+                ? props.article.summarytext[0]
+                : props.article.summarytext[1]}
+            </Text>
+            <Center>
+              <Box
+                fontFamily="Poppins"
+                cursor="pointer"
+                fontWeight="semi"
+                fontSize="lg"
+                w={["55%", "35%", "25%", "20%"]}
+                _hover={{ bg: btn }}
+                bg={btn}
+                color="#F8F8F8"
+                size="lg"
+                rounded={25}
+                pt={1}
+                pb={1}
+              >
+                <Center>
+                  <Text>{lang ? "Download All" : "பதிவிறக்கம்"}</Text>
+                </Center>
+              </Box>
+            </Center>
+          </Box>
+        )}
       </Container>
-
       <Box
         position="fixed"
         bottom="0"

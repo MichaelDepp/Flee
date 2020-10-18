@@ -1,7 +1,7 @@
 import Undercons from "../components/Undercons"
 import Layout from "../components/Layout"
 
-function Forum () {
+function Ministry () {
     return (
         <Layout>
         <Undercons></Undercons>
@@ -9,4 +9,4 @@ function Forum () {
     )
 }
 
-export default Forum
+export default Ministry

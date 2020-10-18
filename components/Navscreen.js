@@ -13,9 +13,9 @@ function Navscreen() {
             <Box justify="center" mb="200px">
                 <VStack>
                     <Linkpage page={"/"} name={"Home"} color={sbtn}></Linkpage>
-                    <Linkpage page={"/lesson"} name={"Lesson"} color={sbtn}></Linkpage>
+                    <Linkpage page={"/lesson"} name={"Bible Study"} color={sbtn}></Linkpage>
+                    <Linkpage page={"/ministry"} name={"Ministry"} color={sbtn}></Linkpage>
                     <Linkpage page={"/counselling"} name={"Counselling"} color={sbtn}></Linkpage>
-                    <Linkpage page={"/forum"} name={"Forum"} color={sbtn}></Linkpage>
                     <Linkpage page={"/contact"} name={"Contact"} color={sbtn}></Linkpage>
                 </VStack>
             </Box>
