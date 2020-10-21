@@ -60,7 +60,7 @@ function Lesson(props) {
           Bible Study
         </Heading>
       </Center>
-      <HStack overflowX="scroll" spacing="24px" py={8}>
+      <HStack overflowX="scroll" spacing="24px" py={8} mb={12}>
         {props.lessons.map((lesson, id) => (
           <Boximage
             key={id}

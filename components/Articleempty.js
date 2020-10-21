@@ -37,8 +37,10 @@ function Articleempty(props) {
   });
 
   function conv(text) {
+    const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
     const converter = new showdown.Converter();
-    return converter.makeHtml(text);
+    console.log(converter.makeHtml(text.replace(regex, "<br>")));
+    return converter.makeHtml(text.replace(regex, "<br>"));
   }
 
   function createMarkup(text) {
@@ -47,9 +49,16 @@ function Articleempty(props) {
     };
   }
 
+  const downloadLink =
+    "https://firebasestorage.googleapis.com/v0/b/flee-1866b.appspot.com/o/IS%20ASSIGNMENT%202%20-%20MICHAEL.pdf?alt=media&token=01903882-71b1-4a6e-9785-b4bb4b352ba7";
+
+  const downloadFile = () => {
+    window.open(downloadLink);
+  };
+
   const showAns = () => {
-    setAns(!ans)
-  }
+    setAns(!ans);
+  };
 
   return (
     <Box my={[5, 8, 12, 16]}>
@@ -86,6 +95,7 @@ function Articleempty(props) {
                   fontFamily: "Poppins",
                   fontWeight: "500",
                   fontSize: "18px",
+                  whiteSpace: "pre-line",
                   wordBreak: "break-word",
                 }
               : {
@@ -93,7 +103,8 @@ function Articleempty(props) {
                   fontFamily: "Poppins",
                   fontWeight: "500",
                   fontSize: "18px",
-                  wordBreak: "break-all",
+                  whiteSpace: "pre-line",
+                  wordBreak: "break-word",
                 }
           }
         ></Box>
@@ -107,54 +118,88 @@ function Articleempty(props) {
           />
         </AspectRatio>
         <Heading mb={4}>{lang ? "Questions" : "கேள்விகள்"}</Heading>
-        <Text
-          pb={8}
-          textAlign="justify"
-          fontWeight="medium"
-          fontSize="lg"
-          fontFamily="heading"
-          style={lang ? { wordBreak: "keep-all" } : { wordBreak: "break-all" }}
-        >
-          {lang ? props.article.summarytext[0] : props.article.summarytext[1]}
-        </Text>
+        <Box
+          my={[6, 8, 10, 12]}
+          dangerouslySetInnerHTML={
+            lang
+              ? createMarkup(conv(props.article.summarytext[0]))
+              : createMarkup(conv(props.article.summarytext[1]))
+          }
+          style={
+            lang
+              ? {
+                  textAlign: "justify",
+                  fontFamily: "Poppins",
+                  fontWeight: "500",
+                  fontSize: "18px",
+                  whiteSpace: "pre-line",
+                  wordBreak: "break-word",
+                }
+              : {
+                  textAlign: "justify",
+                  fontFamily: "Poppins",
+                  fontWeight: "500",
+                  fontSize: "18px",
+                  whiteSpace: "pre-line",
+                  wordBreak: "break-word",
+                }
+          }
+        ></Box>
         <Center>
           <Box
             fontFamily="Poppins"
             cursor="pointer"
             fontWeight="semi"
             fontSize="lg"
-            w={["55%", "35%", "25%", "20%"]}
             _hover={{ bg: btn }}
             bg={btn}
             color="#F8F8F8"
             size="lg"
             rounded={25}
+            px={3}
             pt={1}
             pb={1}
             onClick={showAns}
           >
             <Center>
-              {ans ? <Text>{lang ? "Close Answer" : "விடை மறை"}</Text> : <Text>{lang ? "Show Answer" : "விடை திற"}</Text>}
+              {ans ? (
+                <Text>{lang ? "Close Leader's Guide" : "விடை திற"}</Text>
+              ) : (
+                <Text>{lang ? "Show Leader's Guide" : "விடை திற"}</Text>
+              )}
             </Center>
           </Box>
         </Center>
         {!!ans && (
           <Box mt={6} mb={10}>
             <Heading mb={4}>{lang ? "Answers" : "விடைகள்"}</Heading>
-            <Text
-              pb={8}
-              textAlign="justify"
-              fontWeight="medium"
-              fontSize="lg"
-              fontFamily="heading"
-              style={
-                lang ? { wordBreak: "keep-all" } : { wordBreak: "break-all" }
+            <Box
+              my={[6, 8, 10, 12]}
+              dangerouslySetInnerHTML={
+                lang
+                  ? createMarkup(conv(props.article.summarytext[0]))
+                  : createMarkup(conv(props.article.summarytext[1]))
               }
-            >
-              {lang
-                ? props.article.summarytext[0]
-                : props.article.summarytext[1]}
-            </Text>
+              style={
+                lang
+                  ? {
+                      textAlign: "justify",
+                      fontFamily: "Poppins",
+                      fontWeight: "500",
+                      fontSize: "18px",
+                      whiteSpace: "pre-line",
+                      wordBreak: "break-word",
+                    }
+                  : {
+                      textAlign: "justify",
+                      fontFamily: "Poppins",
+                      fontWeight: "500",
+                      fontSize: "18px",
+                      whiteSpace: "pre-line",
+                      wordBreak: "break-word",
+                    }
+              }
+            ></Box>
             <Center>
               <Box
                 fontFamily="Poppins"
@@ -170,9 +215,11 @@ function Articleempty(props) {
                 pt={1}
                 pb={1}
               >
+                <a href={"./islab.pdf"} download>
                 <Center>
                   <Text>{lang ? "Download All" : "பதிவிறக்கம்"}</Text>
                 </Center>
+                </a>
               </Box>
             </Center>
           </Box>

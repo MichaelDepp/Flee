@@ -15,7 +15,7 @@ function Footer() {
   const btn = "#304FFF";
   const sbtn = useColorModeValue("#F8F8F8", "#304FFF");
   return (
-    <Center pb={[10, 2, 1, 0]}>
+    <Center pb={[10, 2, 1, 0]} marginTop={[10, 8, 6, 10]}>
       <Text
         color={color}
         fontSize="md"

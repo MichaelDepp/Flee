@@ -28,3 +28,8 @@ Mr. Josiah Inbaraj
 Follow us on: 
 Instagram: myf.tac
 Facebook: Tac Myf
+
+
+1. Which incident caused serious damage in your personal life due to your youthful lusts? <br/><br/> 2. What does it mean to flee youthful lusts? As a young person, how do you interpret Apostle Paul’s constant advice to Timothy? <br/><br/> 3. Let’s take a closer look at the text. What must we seek to gain freedom? <br/><br/> 4. What is freedom for you? Describe in your own words. <br/><br/> 5. What do you want to be freed from? Let your answers be clear and specific. <br/><br/> 6. Prayer <br/><br/>
+
+1. கிறிஸ்தவ வாழ்க்கையில் எப்படி சவால்களை சந்தித்து நிலைத்திருப்பது? திமோத்தேயுவுக்கு பவுல் எழுதிய வார்த்தைகளிலிருந்து நாம் என்ன கற்றுக்கொள்ள முடியும்? (நீங்கள் 2 திமோ 2:22 வில் கற்றுக்கொண்டவைகளை பட்டியலிடுங்கள்)\n\n இச்சைகளை விட்டு ஓடுவது\n நன்மையை தொடர்வது…\n  கிறிஸ்தவ வாழ்க்கையை நீங்கள் எப்படி பார்க்கிறீர்கள், தீமோத்தேயுவுடன் உங்களை எவ்வாறு அடையாளம் காண்கிறீர்கள்?\n\n கிறிஸ்தவ வாழ்க்கை என்பது…\n சகித்துக்கொள்வது\n நிலைத்திருப்பது\n திமோத்தேயுவைப்போல, எப்படி நிலைத்திருந்து, தேவனை சேவிப்பது?\n\n இச்சைகளை விட்டு ஓடு’, ‘தேவனை பின்பற்று’\n நீங்கள் வாலிப ஐக்கியத்தில் ஊழியம் செய்துக்கொண்டிருந்தால், நீங்கள் தொடர்ந்து ஊழியம் செய்ய விரும்புகிறீர்களா? ஆம் என்றால், உங்களை என்ன காரியங்கள் ஊக்கிவிக்கிறது? இல்லை என்றால், ஏன்?\n தலைவர்களாக நாங்கள் தேவனோடு ஊழியத்தில் நீங்கள் இன்னும் நெருங்க நாங்கள் என்ன செய்ய நீங்கள் ஆசைப்படுகிறீர்கள்? <br/><br/> 6. ஜெபம் <br/><br/>
